@@ -18,4 +18,4 @@ tensor=torch.FloatTensor([[2,5],[-3,-1]])
 tensor1=torch.tensor([[-3.0,1],[-2.5,7.8]],requires_grad=True)
 t_out=torch.mean(tensor1*tensor1)
 
-
+print('\n',tensor1.data)
