@@ -2,7 +2,7 @@ import torch
 from matplotlib import pyplot as plt
 import torch.nn.functional as F
 import numpy as np
-
+import torch.nn as nn
 
 x=torch.linspace(-5,10,300)
 print('\n',type(x),'\n')
@@ -44,3 +44,4 @@ plt.legend(loc='best')
 plt.show()
 
 k=x.sigmoid()
+w=nn.Sigmoid(x)
