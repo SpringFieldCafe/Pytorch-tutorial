@@ -14,3 +14,11 @@ def main():
         shuffle=True,
         num_workers=2
     )
+
+    for epoch in range(3):
+        for step,(batch_x,batch_y) in enumerate(loader):
+            print(f'Epoch:{epoch}',f'| Step:{step}','| batch x:',batch_x,'| batch y: ',batch_y)
+
+
+if __name__=='__main__':
+    main()
