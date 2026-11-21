@@ -6,6 +6,7 @@ import torch.nn.functional as F
 #h
 LR=0.01
 BATCH_SIZE=32
+EPOCH=12
 
 x=torch.unsqueeze(torch.linspace(-1,1,1000),dim=1)
 y=x.pow(2)+0.2*torch.normal(torch.zeros(*x.size()))
@@ -36,3 +37,21 @@ opt_RMS=torch.optim.RMSprop(net_RMS.parameters(),lr=LR,alpha=0.9)
 opt_Mon=torch.optim.SGD(net_Mon.parameters(),lr=LR,momentum=0.8)
 
 optimizers=[opt_Adam,opt_SGD,opt_RMS,opt_Mon]
+
+Lost_func=torch.nn.MSELoss()
+
+
+def main():
+    for epoch in range(EPOCH):
+        print(f"epoch:  {epoch}   \n")
+        for step,(batch_x,batch_y) in enumerate(loader):
+            for net,opt in zip(nets,optimizers):
+                output=net(batch_x)
+                loss=Lost_func(output,batch_y)
+                opt.zero_grad()
+                loss.backward()
+                opt.step()
+
+
+if __name__=='__main__':
+    main()
