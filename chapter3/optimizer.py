@@ -33,3 +33,6 @@ nets=[net_Adam,net_SGD,net_RMS,net_Mon]
 opt_Adam=torch.optim.Adam(net_Adam.parameters(),lr=LR,betas=(0.9,0.99))
 opt_SGD=torch.optim.SGD(net_SGD.parameters(),lr=LR)
 opt_RMS=torch.optim.RMSprop(net_RMS.parameters(),lr=LR,alpha=0.9)
+opt_Mon=torch.optim.SGD(net_Mon.parameters(),lr=LR,momentum=0.8)
+
+optimizers=[opt_Adam,opt_SGD,opt_RMS,opt_Mon]
