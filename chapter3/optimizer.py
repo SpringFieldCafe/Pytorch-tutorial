@@ -11,3 +11,12 @@ y=x.pow(2)+0.2*torch.normal(torch.zeros(*x.size()))
 
 torch_dataset=Data.TensorDataset(x,y)
 loader=Data.DataLoader(dataset=torch_dataset,batch_size=BATCH_SIZE,shuffle=1,num_workers=2)
+
+
+def make_net():
+    return torch.nn.Sequential(
+        torch.nn.Linear(x.shape[-1],20),
+        torch.nn.ReLU(),
+        torch.nn.Linear(20,y.shape[-1])
+
+    )
