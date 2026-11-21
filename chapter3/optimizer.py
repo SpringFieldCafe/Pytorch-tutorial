@@ -40,17 +40,19 @@ optimizers=[opt_Adam,opt_SGD,opt_RMS,opt_Mon]
 
 Lost_func=torch.nn.MSELoss()
 
+losses_his=[[],[],[],[]]
 
 def main():
     for epoch in range(EPOCH):
         print(f"epoch:  {epoch}   \n")
         for step,(batch_x,batch_y) in enumerate(loader):
-            for net,opt in zip(nets,optimizers):
+            for net,opt,l_his in zip(nets,optimizers,losses_his):
                 output=net(batch_x)
                 loss=Lost_func(output,batch_y)
                 opt.zero_grad()
                 loss.backward()
                 opt.step()
+                l_his.append(loss.item())
 
 
 if __name__=='__main__':
