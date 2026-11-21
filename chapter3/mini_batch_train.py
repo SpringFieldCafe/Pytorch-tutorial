@@ -7,7 +7,7 @@ def main():
     x=torch.linspace(1,10,10)
     y=torch.linspace(10,1,10)
 
-    tor_dataset=Data.TensorDataset(data_tensor=x,target_tensor=y)
+    tor_dataset=Data.TensorDataset(x,y)
     loader=Data.DataLoader(
         dataset=tor_dataset,
         batch_size=BATCH_SIZE,
