@@ -1,0 +1,13 @@
+import torch
+import matplotlib.pyplot as plt
+import torch.utils.data as Data
+import torch.nn.functional as F
+
+#h
+BATCH_SIZE=32
+
+x=torch.unsqueeze(torch.linspace(-1,1,1000),dim=1)
+y=x.pow(2)+0.2*torch.normal(torch.zeros(*x.size()))
+
+torch_dataset=Data.TensorDataset(x,y)
+loader=Data.DataLoader(dataset=torch_dataset,batch_size=BATCH_SIZE,shuffle=1,num_workers=2)
