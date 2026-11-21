@@ -20,3 +20,11 @@ def make_net():
         torch.nn.Linear(20,y.shape[-1])
 
     )
+
+
+net_Adam=make_net()
+net_SGD=make_net()
+net_RMS=make_net()
+net_Mon=make_net()
+
+nets=[net_Adam,net_SGD,net_RMS,net_Mon]
