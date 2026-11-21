@@ -43,6 +43,12 @@ Lost_func=torch.nn.MSELoss()
 losses_his=[[],[],[],[]]
 
 def main():
+    
+    plt.scatter(x,y)
+    plt.show()
+
+
+
     for epoch in range(EPOCH):
         print(f"epoch:  {epoch}   \n")
         for step,(batch_x,batch_y) in enumerate(loader):
