@@ -8,6 +8,7 @@ from pathlib import Path
 import os
 
 
+BATCH_SIZE=50
 DOWNLOAD_MNIST=True
 
 save_dir=Path(__file__).resolve().parent /"MNIST"
@@ -61,6 +62,7 @@ def main():
     # plt.title(f"{train_data.train_labels[0]}")
     # plt.show()
 
+    train_loader=Data.DataLoader(dataset=train_data,shuffle=True,batch_size=BATCH_SIZE,num_workers=2)
 
 
 if __name__=='__main__':
