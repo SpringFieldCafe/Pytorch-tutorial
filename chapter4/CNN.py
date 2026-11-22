@@ -93,6 +93,10 @@ def main():
                 accur=(pred_y==test_y).float().mean().item()
                 print(f"EPOCH:| {epoch}      |  train_loss {loss:.4f}    |  test_accur   {accur:.2%}")
 
+    test_output=cnn(test_x[:10])
+    pred_y=torch.max(test_output,1)[1].squeeze()
+    print(f"predict:  {pred_y}  \n")
+    print(f"real:     {test_y[:10]}  \n")
 
 
 if __name__=='__main__':
