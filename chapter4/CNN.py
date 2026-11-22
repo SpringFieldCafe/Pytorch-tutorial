@@ -40,3 +40,5 @@ class CNN(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(2),
         )
+        self.out=nn.Linear(32*7*7,10)
+
