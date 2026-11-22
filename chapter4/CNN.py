@@ -8,6 +8,7 @@ from pathlib import Path
 import os
 
 
+EPOCH=1
 BATCH_SIZE=50
 LR=0.001
 DOWNLOAD_MNIST=True
@@ -76,6 +77,15 @@ def main():
     optimizer=torch.optim.Adam(cnn.parameters(),lr=LR)
     loss_func=nn.CrossEntropyLoss()
     
+    for epoch in range(EPOCH):
+        for step ,(batch_x,batch_y) in enumerate(train_loader):
+            output=cnn(batch_x)
+            loss=loss_func(output,batch_y)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+
 
 
 if __name__=='__main__':
