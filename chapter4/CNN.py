@@ -49,3 +49,13 @@ class CNN(nn.Module):
         output=self.out(x)
         return output
 
+def main():
+    train_data=torchvision.datasets.MNIST(
+        root=save_dir,train=True,transform=torchvision.transforms.ToTensor(),
+        download=DOWNLOAD_MNIST
+    )
+
+
+
+if __name__=='__main__':
+    main()
