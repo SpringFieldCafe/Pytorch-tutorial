@@ -55,6 +55,12 @@ def main():
         download=DOWNLOAD_MNIST
     )
 
+    print(train_data.data.size())
+    print(train_data.targets.size())
+    # plt.imshow(train_data.train_data[0],cmap='gray')
+    # plt.title(f"{train_data.train_labels[0]}")
+    # plt.show()
+
 
 
 if __name__=='__main__':
