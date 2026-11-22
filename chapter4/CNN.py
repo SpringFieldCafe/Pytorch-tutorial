@@ -9,6 +9,7 @@ import os
 
 
 BATCH_SIZE=50
+LR=0.001
 DOWNLOAD_MNIST=True
 
 save_dir=Path(__file__).resolve().parent /"MNIST"
@@ -69,6 +70,12 @@ def main():
     test_loader=Data.DataLoader(dataset=test_data,batch_size=1000,shuffle=False)
     test_x,test_y=next(iter(test_loader))
 
+    cnn=CNN()
+    print(cnn)
+
+    optimizer=torch.optim.Adam(cnn.parameters(),lr=LR)
+    loss_func=nn.CrossEntropyLoss()
+    
 
 
 if __name__=='__main__':
