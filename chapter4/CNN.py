@@ -10,3 +10,6 @@ from pathlib import Path
 DOWNLOAD_MNIST=True
 
 save_dir=Path(__file__).resolve().parent /"MNIST"
+
+MNIST=torchvision.datasets.MNIST
+MNIST.mirrors=["https://azureopendatastorage.blob.core.windows.net/mnist/",*MNIST.mirrors,]
