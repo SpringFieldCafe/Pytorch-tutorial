@@ -35,3 +35,8 @@ class CNN(nn.Module):
 
             ),
         )
+        self.conv2=nn.Sequential(
+            nn.Conv2d(16,32,5,1,2),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+        )
