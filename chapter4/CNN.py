@@ -86,6 +86,13 @@ def main():
             optimizer.step()
 
 
+            if step % 50 ==0:
+                with torch.no_grad():
+                    test_output=cnn(test_x)
+                    pred_y=torch.max(test_output,1)[1].data.squeeze()
+                accur=(pred_y==test_y).float().mean().item()
+                print(f"EPOCH:| {epoch}      |  train_loss {loss:.4f}    |  test_accur   {accur:.2%}")
+
 
 
 if __name__=='__main__':
