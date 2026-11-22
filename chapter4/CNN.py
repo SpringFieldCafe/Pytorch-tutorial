@@ -42,3 +42,10 @@ class CNN(nn.Module):
         )
         self.out=nn.Linear(32*7*7,10)
 
+    def forward(self,x):
+        x=self.conv1(x)
+        x=self.conv2(x)
+        x=x.view(x.size(0),-1)
+        output=self.out(x)
+        return output
+
