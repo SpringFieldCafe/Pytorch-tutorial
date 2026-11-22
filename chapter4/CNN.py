@@ -18,3 +18,20 @@ MNIST.mirrors=["https://azureopendatastorage.blob.core.windows.net/mnist/",*MNIS
 os.environ["HTTPS_PROXY"]="http://127.0.0.1:7897"
 
 
+class CNN(nn.Module):
+    def __init__(self):
+        super(CNN,self).__init__()
+        self.conv1=nn.Sequential(
+            nn.Conv2d(
+                in_channels=1,
+                out_channels=16,
+                kernel_size=5,
+                stride=1,
+                padding=2,
+            ),
+            nn.ReLU(),
+            nn.MaxPool2d(
+                kernel_size=2,
+
+            ),
+        )
