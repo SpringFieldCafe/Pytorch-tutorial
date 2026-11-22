@@ -63,6 +63,12 @@ def main():
     # plt.show()
 
     train_loader=Data.DataLoader(dataset=train_data,shuffle=True,batch_size=BATCH_SIZE,num_workers=2)
+    test_data=torchvision.datasets.MNIST(root=save_dir,train=False,transform=torchvision.transforms.ToTensor())
+    # test_x=torch.unsqueeze(test_data.data,dim=1).type(torch.FloatTensor)[:1000]/255.
+    # test_y=test_data.targets[:1000]
+    test_loader=Data.DataLoader(dataset=test_data,batch_size=1000,shuffle=False)
+    test_x,test_y=next(iter(test_loader))
+
 
 
 if __name__=='__main__':
