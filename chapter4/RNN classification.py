@@ -58,3 +58,4 @@ def main():
             x=x.reshape((-1,28,28))
             output=rnn(x)
             loss=loss_func(output,y)
+            optimizer.zero_grad()
