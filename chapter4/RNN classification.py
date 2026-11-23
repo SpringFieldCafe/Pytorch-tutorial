@@ -33,3 +33,4 @@ class RNN(nn.Module):
         # x=self.out(x)
         # return x
         r_out,(h_n,h_c)=self.rnn(x,None)
+        out=self.out(r_out[:,-1,:])
