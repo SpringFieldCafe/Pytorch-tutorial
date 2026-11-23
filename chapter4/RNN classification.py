@@ -57,3 +57,4 @@ def main():
         for step,(x,y)   in enumerate(train_loader):
             x=x.reshape((-1,28,28))
             output=rnn(x)
+            loss=loss_func(output,y)
