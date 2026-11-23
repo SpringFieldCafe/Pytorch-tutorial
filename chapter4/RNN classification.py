@@ -72,3 +72,4 @@ def main():
     pred=rnn(test_x[:10])
     pred=torch.max(pred,1)[1].squeeze()
     print(f"  pre  {pred}  ||")
+    print(f"  real {test_y[:10]} ")
