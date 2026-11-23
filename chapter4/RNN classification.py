@@ -18,3 +18,4 @@ save_dir=Path(__file__).resolve().parent /'MNIST'
 
 class RNN(nn.Module):
     def __init__(self):
+        super(RNN,self).__init__()
