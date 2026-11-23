@@ -68,3 +68,4 @@ def main():
                     pred_y=torch.max(test_output,1)[1].squeeze()
                 accur=(pred_y==test_y).float().mean().item()
                 print(f"EPOCH: {epoch}   |  LOSS   {loss:.4f}    |   ACCUR    {accur:.2%}")
+
