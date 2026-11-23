@@ -43,3 +43,4 @@ def main():
     train_loader=torch.utils.data.DataLoader(dataset=train_data,shuffle=True,num_workers=2,batch_size=BATCH_SIZE)
 
     test_data=dsets.MNIST(root=save_dir,train=False,transform=transforms.ToTensor())
+    test_loader=torch.utils.data.DataLoader(dataset=test_data,shuffle=False,batch_size=1000)
