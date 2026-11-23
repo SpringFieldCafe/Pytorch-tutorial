@@ -25,3 +25,4 @@ class RNN(nn.Module):
             num_layers=1,
             batch_first=True,
 
+        )
