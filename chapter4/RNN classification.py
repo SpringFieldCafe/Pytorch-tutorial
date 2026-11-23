@@ -48,3 +48,4 @@ def main():
     test_x=test_x.squeeze(1)
 
     rnn=RNN()
+    print(rnn)
