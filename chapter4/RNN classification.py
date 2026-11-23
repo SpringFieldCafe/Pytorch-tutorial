@@ -69,3 +69,4 @@ def main():
                 accur=(pred_y==test_y).float().mean().item()
                 print(f"EPOCH: {epoch}   |  LOSS   {loss:.4f}    |   ACCUR    {accur:.2%}")
 
+    pred=rnn(test_x[:10])
