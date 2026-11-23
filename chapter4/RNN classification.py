@@ -22,3 +22,4 @@ class RNN(nn.Module):
         self.rnn=nn.LSTM(
             input_size=INPUR_SIZE,
             hidden_size=64,
+            num_layers=1,
