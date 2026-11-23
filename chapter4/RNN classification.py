@@ -50,3 +50,4 @@ def main():
     rnn=RNN()
     print(rnn)
 
+    optimizer=torch.optim.Adam(rnn.parameters(),lr=LR)
