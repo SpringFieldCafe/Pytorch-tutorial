@@ -21,3 +21,4 @@ class RNN(nn.Module):
         super(RNN,self).__init__()
         self.rnn=nn.LSTM(
             input_size=INPUR_SIZE,
+            hidden_size=64,
