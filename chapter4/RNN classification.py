@@ -70,3 +70,4 @@ def main():
                 print(f"EPOCH: {epoch}   |  LOSS   {loss:.4f}    |   ACCUR    {accur:.2%}")
 
     pred=rnn(test_x[:10])
+    pred=torch.max(pred,1)[1].squeeze()
