@@ -47,3 +47,4 @@ def main():
     test_x,test_y=next(iter(test_loader))
     test_x=test_x.squeeze(1)
 
+    rnn=RNN()
