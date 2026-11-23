@@ -26,3 +26,4 @@ class RNN(nn.Module):
             batch_first=True,
 
         )
+        self.out=nn.Linear(64,10)
