@@ -66,3 +66,4 @@ def main():
                 with torch.no_grad():
                     test_output=rnn(test_x)
                     pred_y=torch.max(test_output,1)[1].squeeze()
+                accur=(pred_y==test_y).float().mean().item()
