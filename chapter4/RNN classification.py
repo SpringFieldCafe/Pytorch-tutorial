@@ -6,3 +6,4 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 EPOCH=1
+BATCH_SIZE=64
