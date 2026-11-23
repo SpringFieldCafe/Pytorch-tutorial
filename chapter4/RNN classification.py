@@ -62,3 +62,4 @@ def main():
             loss.backward()
             optimizer.step()
 
+            if step % 50 ==0:
