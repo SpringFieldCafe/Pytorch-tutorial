@@ -41,3 +41,4 @@ def main():
 
     train_data=dsets.MNIST(root=save_dir,train=True,transform=transforms.ToTensor(),download=DOWNLOAD_MNIST)
     train_loader=torch.utils.data.DataLoader(dataset=train_data,shuffle=True,num_workers=2,batch_size=BATCH_SIZE)
+
