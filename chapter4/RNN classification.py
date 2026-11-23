@@ -60,3 +60,4 @@ def main():
             loss=loss_func(output,y)
             optimizer.zero_grad()
             loss.backward()
+            optimizer.step()
