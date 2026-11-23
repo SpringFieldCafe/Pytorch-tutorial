@@ -46,3 +46,4 @@ def main():
     test_loader=torch.utils.data.DataLoader(dataset=test_data,shuffle=False,batch_size=1000)
     test_x,test_y=next(iter(test_loader))
     test_x=test_x.squeeze(1)
+
