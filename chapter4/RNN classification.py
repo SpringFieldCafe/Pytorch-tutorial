@@ -20,3 +20,4 @@ class RNN(nn.Module):
     def __init__(self):
         super(RNN,self).__init__()
         self.rnn=nn.LSTM(
+            input_size=INPUR_SIZE,
