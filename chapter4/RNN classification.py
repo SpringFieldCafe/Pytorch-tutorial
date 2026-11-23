@@ -5,3 +5,4 @@ import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 from pathlib import Path
 
+EPOCH=1
