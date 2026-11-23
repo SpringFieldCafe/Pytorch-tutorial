@@ -13,3 +13,4 @@ LR=0.01
 DOWNLOAD_MNIST=False
 
 save_dir=Path(__file__).resolve().parent /'MNIST'
+
