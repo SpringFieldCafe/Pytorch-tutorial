@@ -74,3 +74,4 @@ def main():
     print(f"  pre  {pred}  ||")
     print(f"  real {test_y[:10]} ")
 
+if __name__=='__main__':
