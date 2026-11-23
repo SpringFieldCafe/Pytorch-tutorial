@@ -37,3 +37,4 @@ class RNN(nn.Module):
         return out
 
 
+def main():
