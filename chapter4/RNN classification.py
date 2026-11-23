@@ -59,3 +59,4 @@ def main():
             output=rnn(x)
             loss=loss_func(output,y)
             optimizer.zero_grad()
+            loss.backward()
