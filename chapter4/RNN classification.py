@@ -36,3 +36,4 @@ class RNN(nn.Module):
         out=self.out(r_out[:,-1,:])
         return out
 
+
