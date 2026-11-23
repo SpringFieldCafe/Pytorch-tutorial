@@ -73,3 +73,4 @@ def main():
     pred=torch.max(pred,1)[1].squeeze()
     print(f"  pre  {pred}  ||")
     print(f"  real {test_y[:10]} ")
+
