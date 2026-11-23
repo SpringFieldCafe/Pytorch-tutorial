@@ -31,3 +31,4 @@ class RNN(nn.Module):
     def forward(self,x):
         # x=self.rnn(x)
         # x=self.out(x)
+        # return x
