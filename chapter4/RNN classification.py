@@ -16,3 +16,4 @@ save_dir=Path(__file__).resolve().parent /'MNIST'
 
 
 
+class RNN(nn.Module):
