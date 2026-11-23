@@ -39,3 +39,4 @@ class RNN(nn.Module):
 
 def main():
 
+    train_data=dsets.MNIST(root=save_dir,train=True,transform=transforms.ToTensor(),download=DOWNLOAD_MNIST)
