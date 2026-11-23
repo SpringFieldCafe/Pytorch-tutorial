@@ -63,3 +63,4 @@ def main():
             optimizer.step()
 
             if step % 50 ==0:
+                with torch.no_grad():
