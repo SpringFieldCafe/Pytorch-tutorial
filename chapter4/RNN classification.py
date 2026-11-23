@@ -56,3 +56,4 @@ def main():
     for epoch in range(EPOCH):
         for step,(x,y)   in enumerate(train_loader):
             x=x.reshape((-1,28,28))
+            output=rnn(x)
