@@ -54,3 +54,4 @@ def main():
     loss_func=nn.CrossEntropyLoss()
 
     for epoch in range(EPOCH):
+        for step,(x,y)   in enumerate(train_loader):
