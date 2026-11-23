@@ -53,3 +53,4 @@ def main():
     optimizer=torch.optim.Adam(rnn.parameters(),lr=LR)
     loss_func=nn.CrossEntropyLoss()
 
+    for epoch in range(EPOCH):
