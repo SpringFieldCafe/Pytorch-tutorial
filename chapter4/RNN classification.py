@@ -51,3 +51,4 @@ def main():
     print(rnn)
 
     optimizer=torch.optim.Adam(rnn.parameters(),lr=LR)
+    loss_func=nn.CrossEntropyLoss()
