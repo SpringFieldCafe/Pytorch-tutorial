@@ -17,3 +17,4 @@ LR=0.02
 # plt.plot(steps,y_np,'blue',label="output(cos)")
 # plt.legend(loc='best')
 # plt.show()
+
