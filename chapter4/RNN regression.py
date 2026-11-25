@@ -20,3 +20,4 @@ LR=0.02
 
 
 class RNN(nn.Module):
+    def __init__(self):
