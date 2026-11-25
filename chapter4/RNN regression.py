@@ -37,3 +37,4 @@ class RNN(nn.Module):
             outs.append(self.out(r_out[:,time_step,:]))
         return torch.stack(outs,dim=1),h_state
 
+if __name__=='__main__':
