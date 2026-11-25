@@ -11,3 +11,4 @@ LR=0.02
 
 # steps=np.linspace(0,np.pi*2,100,dtype=np.float32)
 # x_np=np.sin(steps)
+# y_np=np.cos(steps)
