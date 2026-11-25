@@ -71,3 +71,4 @@ if __name__=='__main__':
         plt.pause(0.05)
 
 
+    plt.ioff()
