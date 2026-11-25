@@ -26,3 +26,4 @@ class RNN(nn.Module):
             input_size=INPUT_SIZE,
             hidden_size=32,
             num_layers=1,
+            batch_first=True,
