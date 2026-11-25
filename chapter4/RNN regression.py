@@ -51,3 +51,4 @@ if __name__=='__main__':
 
     for step in range(200):
         start,end=step*np.pi,(step+1)*np.pi
+        steps=np.linspace(start,end,TIME_STEP,dtype=np.float32)
