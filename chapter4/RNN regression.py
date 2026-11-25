@@ -68,3 +68,4 @@ if __name__=='__main__':
         plt.plot(steps,y_np.flatten(),'red')
         plt.plot(steps,pre.detach().numpy().flatten(),'blue')
         plt.draw();
+        plt.pause(0.05)
