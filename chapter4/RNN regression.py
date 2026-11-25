@@ -38,3 +38,4 @@ class RNN(nn.Module):
         return torch.stack(outs,dim=1),h_state
 
 if __name__=='__main__':
+    rnn=RNN()
