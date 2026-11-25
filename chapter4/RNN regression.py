@@ -50,3 +50,4 @@ if __name__=='__main__':
     plt.ion()
 
     for step in range(200):
+        start,end=step*np.pi,(step+1)*np.pi
