@@ -24,3 +24,4 @@ class RNN(nn.Module):
         super(RNN,self).__init__()
         self.rnn=nn.RNN(
             input_size=INPUT_SIZE,
+            hidden_size=32,
