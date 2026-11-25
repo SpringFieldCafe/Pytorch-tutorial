@@ -32,3 +32,4 @@ class RNN(nn.Module):
 
     def forward(self,x,h_state):
         r_out,h_state=self.rnn(x,h_state)
+        outs=[]
