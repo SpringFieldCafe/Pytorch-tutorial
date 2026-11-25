@@ -35,3 +35,4 @@ class RNN(nn.Module):
         outs=[]
         for time_step in range(r_out.size(1)):
             outs.append(self.out(r_out[:,time_step,:]))
+        return torch.stack(outs,dim=1),h_state
