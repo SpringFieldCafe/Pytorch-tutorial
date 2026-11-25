@@ -41,3 +41,4 @@ if __name__=='__main__':
     rnn=RNN()
     print(rnn)
 
+    optimizer=torch.optim.Adam(rnn.parameters(),lr=LR)
