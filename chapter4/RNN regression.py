@@ -8,3 +8,4 @@ torch.manual_seed(1)
 TIME_STEP=10
 INPUT_SIZE=1
 LR=0.02
+
