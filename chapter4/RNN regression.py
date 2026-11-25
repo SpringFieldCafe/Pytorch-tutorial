@@ -65,3 +65,4 @@ if __name__=='__main__':
         loss.backward()
         optimizer.step()
 
+        plt.plot(steps,y_np.flatten(),'red')
