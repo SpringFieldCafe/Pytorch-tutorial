@@ -30,3 +30,4 @@ class RNN(nn.Module):
         )
         self.out=nn.Linear(32,1)
 
+    def forward(self,x,h_state):
