@@ -56,3 +56,4 @@ if __name__=='__main__':
         y_np=np.cos(steps)
 
         x=torch.from_numpy(x_np[np.newaxis,:,np.newaxis])
+        y=torch.from_numpy(y_np[np.newaxis,:,np.newaxis])
