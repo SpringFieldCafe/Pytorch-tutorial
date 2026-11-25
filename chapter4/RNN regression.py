@@ -55,3 +55,4 @@ if __name__=='__main__':
         x_np=np.sin(steps)
         y_np=np.cos(steps)
 
+        x=torch.from_numpy(x_np[np.newaxis,:,np.newaxis])
