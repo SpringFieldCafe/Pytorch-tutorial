@@ -66,3 +66,4 @@ if __name__=='__main__':
         optimizer.step()
 
         plt.plot(steps,y_np.flatten(),'red')
+        plt.plot(steps,pre.detach().numpy().flatten(),'blue')
