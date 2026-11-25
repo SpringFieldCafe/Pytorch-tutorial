@@ -33,3 +33,4 @@ class RNN(nn.Module):
     def forward(self,x,h_state):
         r_out,h_state=self.rnn(x,h_state)
         outs=[]
+        for time_step in range(r_out.size(1)):
