@@ -23,3 +23,4 @@ class RNN(nn.Module):
     def __init__(self):
         super(RNN,self).__init__()
         self.rnn=nn.RNN(
+            input_size=INPUT_SIZE,
