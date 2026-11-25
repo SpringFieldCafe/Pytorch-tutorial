@@ -29,3 +29,4 @@ class RNN(nn.Module):
             batch_first=True,
         )
         self.out=nn.Linear(32,1)
+
