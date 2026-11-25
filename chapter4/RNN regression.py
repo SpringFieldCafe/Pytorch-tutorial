@@ -42,3 +42,4 @@ if __name__=='__main__':
     print(rnn)
 
     optimizer=torch.optim.Adam(rnn.parameters(),lr=LR)
+    loss_func=nn.MSELoss()
