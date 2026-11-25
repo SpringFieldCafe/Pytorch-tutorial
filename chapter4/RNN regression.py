@@ -22,3 +22,4 @@ LR=0.02
 class RNN(nn.Module):
     def __init__(self):
         super(RNN,self).__init__()
+        self.rnn=nn.RNN(
