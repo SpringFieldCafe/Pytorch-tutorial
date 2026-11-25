@@ -63,3 +63,4 @@ if __name__=='__main__':
         loss=loss_func(pre,y)
         optimizer.zero_grad()
         loss.backward()
+        optimizer.step()
