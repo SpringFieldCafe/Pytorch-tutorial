@@ -13,3 +13,4 @@ LR=0.02
 # x_np=np.sin(steps)
 # y_np=np.cos(steps)
 
+# plt.plot(steps,x_np,'red',label="input(sin)")
