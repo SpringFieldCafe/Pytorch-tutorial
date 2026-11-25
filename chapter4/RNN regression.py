@@ -60,3 +60,4 @@ if __name__=='__main__':
 
         pre,h_state=rnn(x,h_state)
         h_state=h_state.detach()
+        loss=loss_func(pre,y)
