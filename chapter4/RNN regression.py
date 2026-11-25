@@ -19,3 +19,4 @@ LR=0.02
 # plt.show()
 
 
+class RNN(nn.Module):
