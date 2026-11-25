@@ -47,3 +47,4 @@ if __name__=='__main__':
     h_state=None
 
     plt.figure(1,figsize=(12,5))
+    plt.ion()
