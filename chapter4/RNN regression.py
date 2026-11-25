@@ -34,3 +34,4 @@ class RNN(nn.Module):
         r_out,h_state=self.rnn(x,h_state)
         outs=[]
         for time_step in range(r_out.size(1)):
+            outs.append(self.out(r_out[:,time_step,:]))
