@@ -25,3 +25,4 @@ class RNN(nn.Module):
         self.rnn=nn.RNN(
             input_size=INPUT_SIZE,
             hidden_size=32,
+            num_layers=1,
