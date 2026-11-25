@@ -62,3 +62,4 @@ if __name__=='__main__':
         h_state=h_state.detach()
         loss=loss_func(pre,y)
         optimizer.zero_grad()
+        loss.backward()
