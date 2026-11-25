@@ -59,3 +59,4 @@ if __name__=='__main__':
         y=torch.from_numpy(y_np[np.newaxis,:,np.newaxis])
 
         pre,h_state=rnn(x,h_state)
+        h_state=h_state.detach()
